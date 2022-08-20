@@ -34,7 +34,7 @@ size_t hoare_partition(int *array, ssize_t size, ssize_t lo, ssize_t hi)
 	ssize_t i = lo - 1, j = hi + 1;
 	int pivot = array[hi];
 
-	while (i < size)
+while (i < size)
 	{
 		while (array[++i] < pivot)
 			;
@@ -65,7 +65,7 @@ void quicksort(int *array, size_t size, ssize_t lo, ssize_t hi)
 
 		quicksort(array, size, lo, p - 1);
 		quicksort(array, size, p, hi);
-	
+	}
 }
 
 /**

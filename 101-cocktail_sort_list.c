@@ -34,7 +34,7 @@ listint_t *tail_traverse(listint_t *head, listint_t *tail, listint_t *list)
 		{
 			swap(tail->prev, tail);
 			if (tail->prev == NULL)
-				list = tail
+				list = tail;
 			print_list(list);
 		}
 		else
